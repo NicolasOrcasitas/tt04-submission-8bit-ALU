@@ -27,8 +27,8 @@ module tt_um_ALU_NicolasOrcasitas_tb ();
 
     initial begin
 
-        $dumpfile("ALU_tb.vcd");
-        $dumpvars(0, ALU_tb);
+        $dumpfile("tt_um_ALU_NicolasOrcasitas_tb.vcd");
+        $dumpvars(0, tt_um_ALU_NicolasOrcasitas_tb);
 
         rst_n = 1'b0;
         #10;

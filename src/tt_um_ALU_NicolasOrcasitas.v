@@ -71,25 +71,30 @@ end
 
 // register A
 always @( posedge clk) begin
-    if (enA) 
+    if (rst_n) begin
+        A <= 8'd0;
+    end    
+    else if (enA) begin
         A <= ui_in;
+    end
 end
 // Resgistrer B
 always @( posedge clk) begin
-    if (enB) 
+    if (rst_n) begin
+        B <= 8'd0;
+    end    
+    else if (enB) begin
         B <= ui_in;
+    end
 end
 
 // Reset
 always @(*) begin
     if (~rst_n)
-        A <= 8'd0;
-        B <= 8'd0;
         uo_out <= 8'd0;
         out <= 6'd0;
         overflow <= 0;
         flag <= 0;
-
 end
     
 endmodule
