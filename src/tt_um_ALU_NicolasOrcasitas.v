@@ -87,14 +87,5 @@ always @( posedge clk) begin
         B <= ui_in;
     end
 end
-
-// Reset
-always @(*) begin
-    if (~rst_n)
-        uo_out <= 8'd0;
-        out <= 6'd0;
-        overflow <= 0;
-        flag <= 0;
-end
     
 endmodule
