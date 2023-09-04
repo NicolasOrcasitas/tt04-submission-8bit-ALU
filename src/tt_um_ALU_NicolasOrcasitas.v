@@ -25,7 +25,7 @@ assign uio_out[5:0] = out;
 assign uio_out[6] = flag;
 assign uio_out[7] = overflow;
 
-assign uio_oe = 8'b11111111;
+assign uio_oe = 8'b11000000;
 
 assign enB = ~enA;
 
