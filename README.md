@@ -1,3 +1,27 @@
+# ALU 8-bits
+
+This ALU supports 8 operations of numbers of 8-bits, controlled by the 3-bit signal ALUcontrol (uio_in[2:0]): 
+
+- Addition (000)
+- Subtraction (001)
+- Logical shift left (010)
+- Logical shift right (011)
+- AND (100)
+- OR (101)
+- XOR (110)
+- Multiplication (111)
+
+It also supports 4 operations of 1-bit, controlled by the 2-bit signal flagcontrol (uio_in[5:4]), and the output is the signal flag (uio_out[6]): 
+
+- A > B (00)
+- A = B (01)
+- A = 0 (10)
+- If A is even, the output is 1 (11)
+
+![ALU.png](ALU%208-bits%20af110019557347ab86ae42950fba84f0/ALU.png)
+
+De signal enA (uio_in[3]) controls which number is being stored (A or B).
+
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/wokwi_test/badge.svg)
 
 # What is Tiny Tapeout?
