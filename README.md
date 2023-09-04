@@ -18,7 +18,7 @@ It also supports 4 operations of 1-bit, controlled by the 2-bit signal flagcontr
 - A = 0 (10)
 - If A is even, the output is 1 (11)
 
-![ALU.png](ALU.png)
+![ALU.jpeg](ALU.jpeg)
 
 De signal enA (uio_in[3]) controls which number is being stored (A or B).
 
